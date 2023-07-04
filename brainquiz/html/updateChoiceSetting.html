@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>クイズ設定画面</title>
+    </head>
+    <body>
+        <h2>クイズ設定</h2>
+        <p>テキストボックスに更新したい選択肢番号を入力してください</p>
+        <form action="/brainquiz/settingUpdateChoice" method="post">
+            <p>選択肢番号</p>
+            <input type="text" name="id" required minlength="1">
+            <p>修正後の選択肢</p>
+            <input type="text" name="choice" required minlength="1" maxlength="100" size="100" >
+            <p>修正後の選択肢判定</p>
+            <input type="radio" name="is_answer" value="true">正解
+            <input type="radio" name="is_answer" value="false">不正解
+            <p>修正後の、どの問題の選択肢とするかを問題文の番号で入力してください</p>
+            <input type="text" name="question_id" required minlength="1">
+
+            <input type="submit" value="送信する">
+        </form>
+
+        <button onclick="location.href='/brainquiz/BrainChoice.html'" >トップページに戻る</button> 
+    </body>
+</html>

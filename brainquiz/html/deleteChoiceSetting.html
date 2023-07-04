@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>クイズ設定画面</title>
+    </head>
+    <body>
+        <h2>クイズ設定</h2>
+        <p>テキストボックスに削除したい選択肢の番号を入力してください</p>
+        <form action="/brainquiz/settingDeleteChoice" method="post">
+            <input type="text" name="id" required minlength="1">
+            <p></p>
+
+            <input type="submit" value="送信する">
+        </form>
+
+        <button onclick="location.href='/brainquiz/BrainChoice.html'" >トップページに戻る</button> 
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>クイズ設定画面</title>
+    </head>
+    <body>
+        <h2>クイズ設定</h2>
+        <p>テキストボックスに修正したい問題のidと修正した問題文を入力してください</p>
+        <form action="/brainquiz/settingUpdate" method="post">
+            
+            <input type="text" name="updateid" required minlength="1">
+            <input type="text" name="question" required minlength="1" maxlength="100" size="100" >
+            <input type="submit" value="送信する">
+        </form>
+
+        <button onclick="location.href='/brainquiz/BrainChoice.html'" >トップページに戻る</button> 
+    </body>
+</html>

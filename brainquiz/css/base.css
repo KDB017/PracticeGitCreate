@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+body
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #BA55D3;
+    font-size: 16px;
+}
+
+ header 
+ {
+    width: 75%;
+    margin: 0% 10%;
+    padding: 10px;
+    background-color: #cc99cc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  } 
+  
+  header h2
+  {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+  }
+
+  header p
+  {
+    text-align: center;
+    color:#fff;
+    
+  }
+
+  div.main
+  {
+    width:  1050px;
+    height:400px;
+    margin: 5% 10%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+div.main input,
+div.main button 
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 200px; /* 必要に応じて調整 */
+    margin-left: 200px;
+    background-color: #663366;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.main input:hover,
+div.main button:hover
+{
+    background-color: #0077b3;
+}
